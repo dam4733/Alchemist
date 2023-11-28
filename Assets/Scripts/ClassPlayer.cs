@@ -23,6 +23,9 @@ public static class ClassPlayer
 
     public static bool Action {  get; set; }
 
+    public static bool CountingAction { get; set; }
+    public static bool? CountingInProgressFlag{ get; set; }
+
     static ClassPlayer()
     {
         UtworzenieGracza = string.Empty;
@@ -33,8 +36,9 @@ public static class ClassPlayer
         AlchemyExperience = 0;
         InventionLevel = 1;
         InventionExperience = 0;
-        ActionPoints = 100;
+        ActionPoints = 10;
         Action = true;
+        CountingInProgressFlag = false;
     }
     
 }

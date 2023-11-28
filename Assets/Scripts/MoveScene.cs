@@ -27,6 +27,11 @@ public class MoveToAnotherScene : MonoBehaviour
         Debug.Log("Kliknieto");
         SceneManager.LoadScene(0);
     }
+    public void MoveToMine()
+    {
+        
+        SceneManager.LoadScene(5);
+    }
     public void MoveToInvention()
     {
         SceneManager.LoadScene(3);
